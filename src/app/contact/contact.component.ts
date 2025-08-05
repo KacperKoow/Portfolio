@@ -27,7 +27,8 @@ export class ContactComponent {
     emailjs.init('PU3i1gbVeoMgsd_Iv');
     emailjs.send('service_ppon2po', 'template_nq7dvwf', {
       name: formData.value.name,
-      email: formData.value.email,
+      email: 'kacper.kowalski799@gmail.com',
+      from_email: formData.value.from_email,
       message: formData.value.message,
     });
     alert('Your message has been sent successfully.');
