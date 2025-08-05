@@ -1,4 +1,4 @@
-# Portfolio Kacpra Kowalski
+# Portfolio Kacper Kowalski
 
 ## Description
 
