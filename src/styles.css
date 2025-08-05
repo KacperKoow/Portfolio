@@ -1,3 +1,9 @@
+/* 
+- Font sizes (rem)
+0.625 / 0.75 / 0.875 / 1 / 1.125 / 1.25 / 1.5 / 2 / 2.25 / 2.5 / 3 / 4 / 5 / 5.5 / 6 
+- Spacing system (rem)
+.125 / 0.25 / 0.5 / 0.75 / 1 / 1.25 / 2 / 3 / 4 / 5 / 6 / 8
+*/
 *,
 *::before,
 *::after {
@@ -7,12 +13,146 @@
 * {
   margin: 0;
   padding: 0;
-  font: inharit;
+}
+
+:root {
+  /* Colors */
+  --gray100: hsl(0, 0%, 100%);
+  --gray90: hsl(0, 0%, 90%);
+  --gray70: hsl(0, 0%, 70%);
+  --gray50: hsl(0, 0%, 50%);
+  --gray30: hsl(0, 0%, 30%);
+  --gray10: hsl(0, 0%, 10%);
+
+  --color-primary: hsl(134, 47%, 57%);
+  --color-secondary: hsl(134, 47%, 77%);
+  --background-color: hsla(134, 47%, 57%, 0.227);
+
+  /* Text */
+  --ff: "Inter", sans-serif;
+  --h1: bold 2.5rem/1em var(--ff);
+  --h2: 500 2rem/1.2em var(--ff);
+  --h3: 1.7rem/1.2em var(--ff);
+  --h4: 1.5rem/1.4em var(--ff);
+  --h5: 1.3rem/1.4em var(--ff);
+  --a: 1.25rem/1.4em var(--ff);
+  --p: 1.1rem/1.6em var(--ff);
+
+  /* Spacing */
+  --spacing1: 0.25rem;
+  --spacing2: 0.5rem;
+  --spacing3: 1rem;
+  --spacing4: 1.25rem;
+  --spacing5: 2rem;
+  --spacing6: 3rem;
+  --spacing7: 4rem;
+  --spacing8: 6rem;
+
+  /* Border Radius */
+  --br: 50px;
+  --br2: 12px;
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: var(--ff);
   margin: 0;
   padding: 0;
   height: 100%;
+}
+
+section {
+  width: 100%;
+}
+
+.container {
+  padding: var(--spacing6) var(--spacing6) var(--spacing8) var(--spacing6);
+  max-width: 90rem;
+  margin: 0 auto;
+}
+
+.background-color {
+  background-color: var(--background-color);
+}
+.two-columns {
+  display: grid;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing7);
+}
+
+.three-columns {
+  display: grid;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing7);
+}
+
+h1 {
+  font: var(--h1);
+  color: var(--color-primary);
+}
+
+h2 {
+  font: var(--h2);
+  margin-bottom: var(--spacing4);
+}
+
+h3 {
+  font: var(--h3);
+  margin-bottom: var(--spacing5);
+}
+
+h4 {
+  font: var(--h4);
+  margin-bottom: var(--spacing4);
+}
+
+h5 {
+  font: var(--h5);
+  margin-bottom: var(--spacing2);
+}
+
+p,
+label {
+  font: var(--p);
+}
+
+a,
+a:link,
+a:visited {
+  font: var(--a);
+  color: var(--gray10);
+  text-decoration: none;
+}
+
+a:hover,
+a:active {
+  color: var(--gray30);
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+button,
+.button {
+  border: none;
+  background-color: var(--color-primary);
+  padding: var(--spacing3) var(--spacing5);
+  border-radius: var(--br);
+}
+
+button:hover,
+.button:hover {
+  background-color: var(--color-secondary);
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.button-text {
+  font: var(--a);
+}
+
+img {
+  border-radius: var(--br2);
+  width: 100%;
 }
