@@ -1,27 +1,39 @@
-# Portfolio
+# Portfolio Kacpra Kowalski
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.11.
+## Description
 
-## Development server
+This is a personal portfolio website built with Angular 18, TypeScript, HTML, and CSS. The app showcases my technical skills, professional experience, education, and projects. It also includes a contact form that enables users to send messages directly to me using [EmailJS](https://www.emailjs.com/), without the need for a backend. Icons throughout the site are provided by [FontAwesome](https://fontawesome.com/), integrated via the official Angular FontAwesome package. The site is clean, minimalistic, and designed to provide a smooth user experience.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Table of contents
 
-## Code scaffolding
+- [Technologies](#technologies)
+- [Features](#features)
+- [How it works](#how-it-works)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Technologies
 
-## Build
+Project is created with:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Angular version: 18.2.0
+- TypeScript version: ~5.5.2
+- EmailJS browser SDK version: 4.4.1
+- FontAwesome Angular packages:
+  - @fortawesome/angular-fontawesome: 0.15.0
+  - @fortawesome/free-brands-svg-icons: 6.7.2
+  - @fortawesome/free-regular-svg-icons: 7.0.0
+  - @fortawesome/free-solid-svg-icons: 6.7.2
 
-## Running unit tests
+## Features
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- Showcases my skills and technologies I use
+- Displays my professional work experience and education
+- Highlights selected projects with descriptions and images
+- Contact form integrated with EmailJS for sending messages without backend
+- Icons implemented with FontAwesome Angular component for consistent UI
 
-## Running end-to-end tests
+## How it works
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- User can navigate through sections presenting my background and projects.
+- Contact form validates inputs and sends email via EmailJS service.
+- Messages are delivered directly without backend thanks to EmailJS integration.
+- FontAwesome icons are used for visual enhancement and better user experience.
