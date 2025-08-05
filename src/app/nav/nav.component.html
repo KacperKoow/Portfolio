@@ -1,19 +1,24 @@
-<nav id="desktop-nav">
-  <div class="logo" routerLink="">Kacper Kowalski</div>
-  <div>
-    <ul class="nav-links">
-      <li>
-        <a routerLink="/about">About</a>
-      </li>
-      <li>
-        <a routerLink="/experience">Experience</a>
-      </li>
-      <li>
-        <a routerLink="/projects">Projects</a>
-      </li>
-      <li>
-        <a routerLink="/contact">Contact</a>
-      </li>
-    </ul>
+<header>
+  <div class="container">
+    <h2>Kacper Kowalski</h2>
+
+    <nav>
+      <ul>
+        <li>
+          <a (click)="onNavigateToSection('about')">About</a>
+        </li>
+        <li>
+          <a (click)="onNavigateToSection('experience')">Experience</a>
+        </li>
+        <li>
+          <a (click)="onNavigateToSection('contact')">Contact</a>
+        </li>
+        <li>
+          <a class="button" (click)="onNavigateToSection('projects')"
+            >Projects</a
+          >
+        </li>
+      </ul>
+    </nav>
   </div>
-</nav>
+</header>

@@ -1,37 +1,22 @@
-nav,
-.nav-links {
+header {
+  border-bottom: solid var(--background-color);
+}
+.container {
   display: flex;
-}
-
-nav {
-  justify-content: space-around;
+  justify-content: space-between;
+  margin: 0 auto;
   align-items: center;
-  height: 17vh;
+  height: 6rem;
+  padding: 0 3rem;
 }
 
-.nav-links {
-  gap: 2rem;
+h2 {
+  margin-bottom: 0;
+}
+
+ul {
   list-style: none;
-  font-size: 1.5rem;
-}
-
-a {
-  color: black;
-  text-decoration: none;
-  text-decoration-color: white;
-}
-
-a:hover {
-  color: grey;
-  text-decoration: underline;
-  text-underline-offset: 1rem;
-  text-decoration-color: rgb(181, 181, 181);
-}
-
-.logo {
-  font-size: 2rem;
-}
-
-.logo:hover {
-  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
 }
