@@ -1,0 +1,13 @@
+.experience {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  gap: var(--spacing7);
+}
+
+h2:last-of-type {
+  margin-top: var(--spacing7);
+}
+
+p {
+  align-self: center;
+}
