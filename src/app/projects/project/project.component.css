@@ -1,0 +1,46 @@
+.card {
+  box-shadow: 0 var(--spacing4) var(--spacing5) var(--gray30);
+  border-radius: var(--br2);
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+.info {
+  padding: var(--spacing4) var(--spacing5) var(--spacing5) var(--spacing5);
+}
+
+.button-container {
+  display: flex;
+  gap: var(--spacing6);
+  margin-top: var(--spacing5);
+}
+
+a,
+a:link,
+a:visited {
+  display: flex;
+  gap: var(--spacing4);
+  font: var(--a);
+  border: none;
+  background-color: var(--color-primary);
+  padding: var(--spacing2) var(--spacing4);
+  border-radius: var(--br);
+  text-decoration: none;
+}
+
+a:hover,
+a:active {
+  background-color: var(--color-secondary);
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+.link {
+  align-self: center;
+  font: var(--a);
+}

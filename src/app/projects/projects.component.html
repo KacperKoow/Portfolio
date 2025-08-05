@@ -1,1 +1,23 @@
-<p>projects works!</p>
+<section id="projects">
+  <div class="container">
+    <h2>Projects</h2>
+    <div class="projects">
+      @for (project of projects; track project.title) {
+      <app-project [project]="project"></app-project>}
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <h2>Stack</h2>
+    <div class="skill-gallery">
+      <img src="skill-gallery/angular.png" alt="Angular Logo" loading="lazy" />
+      <img src="skill-gallery/rxjs.png" alt="RxJs Logo" loading="lazy" />
+      <img src="skill-gallery/js.png" alt="JavaScript Logo" loading="lazy" />
+      <img src="skill-gallery/ts.png" alt="TypeScript Logo" loading="lazy" />
+      <img src="skill-gallery/css.png" alt="CSS Logo" loading="lazy" />
+      <img src="skill-gallery/html.png" alt="HTML Logo" loading="lazy" />
+      <img src="skill-gallery/github.png" alt="GitHub Logo" loading="lazy" />
+    </div>
+  </div>
+</section>
