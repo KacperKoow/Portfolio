@@ -1,1 +1,80 @@
-<p>contact works!</p>
+<section id="contact">
+  <div class="container">
+    <h2>Contact Me</h2>
+    <div class="two-columns">
+      <div class="contact-info-wrapper">
+        <h3>My Contact Details</h3>
+        <div class="contact-info">
+          <div class="contact-element">
+            <div class="title">
+              <fa-icon [icon]="faEnvelope" [size]="'2x'" class="icon"></fa-icon>
+              <h3 class="contact-header">Email</h3>
+            </div>
+            <a href="mailto:kacper.kowalski799gmail.com"
+              >kacper.kowalski799gmail.com</a
+            >
+          </div>
+          <div class="contact-element">
+            <div class="title">
+              <fa-icon [icon]="faPhone" [size]="'2x'" class="icon"></fa-icon>
+              <h3 class="contact-header">Phone</h3>
+            </div>
+            <a href="tel:+48508861113">+48 508 861 113</a>
+          </div>
+          <div class="contact-element">
+            <div class="title">
+              <fa-icon [icon]="faLinkedin" [size]="'2x'" class="icon"></fa-icon>
+              <h3 class="contact-header">Linkedin</h3>
+            </div>
+            <a
+              href="https://www.linkedin.com/in/kowalski-kacper/"
+              target="_blank"
+              >linkedin.com/in/kowalski-kacper</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="message-form-wrapper">
+        <h3>Send Me a Message</h3>
+        <form #form="ngForm" (ngSubmit)="onSubmit(form)">
+          <div class="message-element">
+            <input
+              id="name"
+              name="name"
+              type="text"
+              placeholder="Full Name"
+              required
+              ngModel
+            />
+          </div>
+          <div class="message-element">
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="Email address"
+              required
+              email
+              ngModel
+            />
+          </div>
+          <div class="message-element">
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Message"
+              required
+              rows="3"
+              ngModel
+            ></textarea>
+          </div>
+          <button class="sending-button">
+            <p class="button-text">Send</p>
+            <fa-icon [icon]="faPaperPlane" [size]="'2x'" class="icon"></fa-icon>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

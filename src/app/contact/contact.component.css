@@ -1,0 +1,45 @@
+.two-columns {
+  box-shadow: 0 2.4rem 4.8rem var(--gray30);
+  border-radius: var(--br);
+  padding: var(--spacing5);
+}
+
+.contact-info-wrapper,
+.message-form-wrapper {
+  padding: var(--spacing5);
+}
+
+.contact-header {
+  margin-bottom: 0;
+}
+
+.contact-element {
+  margin-bottom: var(--spacing5);
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing3);
+  margin-bottom: var(--spacing2);
+}
+
+.message-element {
+  margin-bottom: var(--spacing4);
+}
+
+input,
+textarea {
+  width: 100%;
+  font-size: 1.2rem;
+  font-family: inherit;
+  color: inherit;
+  padding: var(--spacing3);
+  border-radius: var(--br2);
+  border: 1px solid;
+}
+
+.sending-button {
+  display: flex;
+  gap: var(--spacing2);
+}
