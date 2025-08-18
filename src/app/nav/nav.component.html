@@ -3,7 +3,7 @@
     <h2>Kacper Kowalski</h2>
 
     <nav>
-      <ul>
+      <ul class="nav-links">
         <li>
           <a (click)="onNavigateToSection('about')">About</a>
         </li>
@@ -19,6 +19,39 @@
           >
         </li>
       </ul>
+      <button class="btn-mobile-nav" (click)="toggleMenu()">
+        @if(menuOpen){
+        <fa-icon [icon]="faXmark" [size]="'2x'" class="icon"></fa-icon>}@else
+        {<fa-icon [icon]="faBars" [size]="'2x'" class="icon"></fa-icon>}
+      </button>
+      @if(menuOpen){
+
+      <ul class="mobile-menu">
+        <li>
+          <a (click)="onNavigateToSection('about')" (click)="closeMenu()"
+            >About</a
+          >
+        </li>
+        <li>
+          <a (click)="onNavigateToSection('experience')" (click)="closeMenu()"
+            >Experience</a
+          >
+        </li>
+        <li>
+          <a (click)="onNavigateToSection('contact')" (click)="closeMenu()"
+            >Contact</a
+          >
+        </li>
+        <li>
+          <a
+            class="button"
+            (click)="onNavigateToSection('projects')"
+            (click)="closeMenu()"
+            >Projects</a
+          >
+        </li>
+      </ul>
+      }
     </nav>
   </div>
 </header>
