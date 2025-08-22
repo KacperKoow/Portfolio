@@ -1,10 +1,11 @@
 import { Component, inject } from '@angular/core';
 import { NavService } from '../nav/nav.service';
+import { NgOptimizedImage } from '@angular/common';
 
 @Component({
   selector: 'app-hero',
   standalone: true,
-  imports: [],
+  imports: [NgOptimizedImage],
   templateUrl: './hero.component.html',
   styleUrl: './hero.component.css',
 })
