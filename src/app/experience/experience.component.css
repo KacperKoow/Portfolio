@@ -1,6 +1,6 @@
 .experience {
   display: grid;
-  grid-template-columns: 1fr 5fr;
+  grid-template-columns: 2fr 9fr;
   gap: var(--spacing7);
 }
 
@@ -10,4 +10,27 @@ h2:last-of-type {
 
 p {
   align-self: center;
+}
+
+@media (max-width: 1050px) {
+  .experience {
+    grid-template-columns: 1fr 3fr;
+  }
+}
+
+@media (max-width: 950px) {
+  .experience {
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+@media (max-width: 850px) {
+  .experience {
+    grid-template-columns: 1fr;
+    gap: var(--spacing4);
+  }
+
+  img {
+    width: 10rem;
+  }
 }
