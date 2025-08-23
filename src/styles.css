@@ -122,6 +122,7 @@ a:active {
 button,
 .button {
   border: none;
+  color: var(--gray10);
   background-color: var(--color-primary);
   padding: var(--spacing3) var(--spacing5);
   border-radius: var(--br);
@@ -129,6 +130,7 @@ button,
 
 button:hover,
 .button:hover {
+  color: var(--gray30);
   background-color: var(--color-secondary);
   transition: 0.3s ease-in-out;
   cursor: pointer;
