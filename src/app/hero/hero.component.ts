@@ -13,6 +13,11 @@ export class HeroComponent {
   private navService = inject(NavService);
 
   onNavigateToSection(section: string) {
-    this.navService.navigateToSection(section);
+    const element = document.getElementById(section);
+    if (element) {
+      const yOffset = -96;
+      const y = element.getBoundingClientRect().top + window.scrollY + yOffset;
+      window.scrollTo({ top: y, behavior: 'smooth' });
+    }
   }
 }
