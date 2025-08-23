@@ -3,11 +3,12 @@ import { Project } from './project.model';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { NgOptimizedImage } from '@angular/common';
 
 @Component({
   selector: 'app-project',
   standalone: true,
-  imports: [FontAwesomeModule],
+  imports: [FontAwesomeModule, NgOptimizedImage],
   templateUrl: './project.component.html',
   styleUrl: './project.component.css',
 })
