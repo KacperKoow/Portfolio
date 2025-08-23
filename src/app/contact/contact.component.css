@@ -1,4 +1,7 @@
-.two-columns {
+.contact-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing7);
   box-shadow: 0 2.4rem 4.8rem var(--gray30);
   border-radius: var(--br);
   padding: var(--spacing5);
@@ -42,4 +45,34 @@ textarea {
 .sending-button {
   display: flex;
   gap: var(--spacing2);
+}
+
+@media (max-width: 950px) {
+  .contact-wrapper {
+    gap: var(--spacing5);
+  }
+  .contact-info-wrapper,
+  .message-form-wrapper {
+    padding: var(--spacing3);
+  }
+}
+
+@media (max-width: 850px) {
+  .contact-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+    gap: var(--spacing2);
+  }
+
+  .contact-info-wrapper,
+  .message-form-wrapper {
+    padding: var(--spacing1);
+  }
+
+  h3 {
+    margin-bottom: var(--spacing3);
+  }
+
+  .contact-element {
+    margin-bottom: var(--spacing3);
+  }
 }
