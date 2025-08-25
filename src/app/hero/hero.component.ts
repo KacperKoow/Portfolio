@@ -1,5 +1,4 @@
 import { Component, inject } from '@angular/core';
-import { NavService } from '../nav/nav.service';
 import { NgOptimizedImage } from '@angular/common';
 
 @Component({
@@ -10,8 +9,6 @@ import { NgOptimizedImage } from '@angular/common';
   styleUrl: './hero.component.css',
 })
 export class HeroComponent {
-  private navService = inject(NavService);
-
   onNavigateToSection(section: string) {
     const element = document.getElementById(section);
     if (element) {
