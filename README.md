@@ -2,7 +2,7 @@
 
 ## Description
 
-This is a personal portfolio website built with Angular 18, TypeScript, HTML, and CSS. The app showcases my technical skills, professional experience, education, and projects. It also includes a contact form that enables users to send messages directly to me using [EmailJS](https://www.emailjs.com/), without the need for a backend. Icons throughout the site are provided by [FontAwesome](https://fontawesome.com/), integrated via the official Angular FontAwesome package. The site is clean, minimalistic, and designed to provide a smooth user experience.
+This is a personal portfolio website built with Angular 18, TypeScript, HTML, and CSS. The app showcases my technical skills, professional experience, education, and projects. It also includes a contact form that enables users to send messages directly to me using [EmailJS](https://www.emailjs.com/), without the need for a backend. Icons throughout the site are provided by [FontAwesome](https://fontawesome.com/), integrated via the official Angular FontAwesome package. The site is fully responsive, clean, minimalistic, and designed to provide a smooth user experience across different devices.
 
 ## Table of contents
 
