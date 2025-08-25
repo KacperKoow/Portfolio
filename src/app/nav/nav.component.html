@@ -20,11 +20,11 @@
         </li>
       </ul>
       <button class="btn-mobile-nav" (click)="toggleMenu()">
-        @if(menuOpen){
+        @if(menuOpen()){
         <fa-icon [icon]="faXmark" [size]="'2x'" class="icon"></fa-icon>}@else
         {<fa-icon [icon]="faBars" [size]="'2x'" class="icon"></fa-icon>}
       </button>
-      @if(menuOpen){
+      @if(menuOpen()){
 
       <ul class="mobile-menu">
         <li>

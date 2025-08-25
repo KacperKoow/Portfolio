@@ -1,5 +1,4 @@
-import { Component, inject, HostListener } from '@angular/core';
-import { NavService } from './nav.service';
+import { Component, HostListener, signal } from '@angular/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
 
@@ -14,8 +13,7 @@ export class NavComponent {
   faBars = faBars;
   faXmark = faXmark;
 
-  private navService = inject(NavService);
-  menuOpen = false;
+  menuOpen = signal(false);
 
   onNavigateToSection(section: string) {
     const element = document.getElementById(section);
@@ -27,17 +25,17 @@ export class NavComponent {
   }
 
   toggleMenu() {
-    this.menuOpen = !this.menuOpen;
+    this.menuOpen.update((open) => !open);
   }
 
   closeMenu() {
-    this.menuOpen = false;
+    this.menuOpen.set(false);
   }
 
   @HostListener('window:resize', ['$event'])
   onResize(event: any) {
     if (event.target.innerWidth > 950 && this.menuOpen) {
-      this.menuOpen = false;
+      this.menuOpen.set(false);
     }
   }
 }
